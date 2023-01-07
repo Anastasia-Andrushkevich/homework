@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Задача 4c</title>
+    <style>
+        .title_g {
+            width: 70px;
+            height: 50px;
+        }
+        .title_v {
+            width: 200px; 
+            height: 50px;
+            padding-left: 20px;
+            background-color: rgb(41, 40, 40);
+        }
+        .content {
+            width: 70px; 
+            height: 50px;
+            padding-left: 20px;
+            background-color: rgb(41, 40, 40);
+        }
+        .manager {
+            width: 200px;
+            height: 50px;
+            padding-left: 20px;
+            background-color: rgb(41, 40, 40);
+        }
+    </style>
+</head>
+<body>
+    <table style="background-color: rgb(53, 50, 50); color:white;">
+       <tr>
+            <th style="width: 150px;
+                        height: 30px;
+                        text-align: left;
+                        padding-left: 20px;">Сотрудник</th>>
+            <th class="title_g">Зарплата</th>
+            <th class="title_g">Бонусы</th>
+            <th class="manager" style="background-color: rgb(53, 50, 50);">Менеджер</th>
+        </tr>
+
+        <tr>
+            <td class="title_v">Алексей Примадонин</td>
+            <td class="content">750$</td>
+            <td class="content">63$</td>
+            <td class="manager" rowspan="2" style="vertical-align:middle">Кодовёнок Хекслетович</td>
+        </tr>
+
+        <tr>
+            <td class="title_v">Вениамин Редакторович</td>
+            <td class="content">1200$</td>
+            <td class="content">0</td>
+        </tr>
+
+        <tr>
+            <td class="title_v">Джедай Падаванов</td>
+            <td class="content">500$</td>
+            <td class="content">100$</td>
+            <td class="manager">Королева Верстальщина</td>
+        </tr>
+
+        <tr>
+            <td colspan="3"></td>
+            <td style="width: 150px;
+                        height: 30px;
+                        font-weight: bold;
+                        text-align: right;
+                        padding-right: 20px;">Всего: 2613$</td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Задача 6d</title>
+<style>
+    .rating{
+        display: inline-flex;
+        direction: rtl;
+    }
+    
+    .rating > span:hover:before,
+    .rating > span:hover ~ span:before {
+        content: url('star1.png');
+        position: absolute;
+    }
+</style>
+</head>
+<body>
+    <div class="rating">
+       <span> <img src="star0.png"> </span>
+       <span> <img src="star0.png"> </span> 
+       <span> <img src="star0.png"> </span>
+       <span> <img src="star0.png"> </span>
+       <span> <img src="star0.png"> </span>                         
+    </div>
+    
+</body>
+</html>

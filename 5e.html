@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Задача 5.5e</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<style>
+    body{
+        font-family: 'Poppins', sans-serif;
+    }
+    .page{
+        box-sizing: border-box;
+        width: 750px;
+        margin-right: auto;
+        margin-left: auto;
+        border: 1px solid;
+        padding: 40px 30px 0px 20px;
+    }
+    .term{
+        background-color: #f2f1f1;
+    }
+    .one{
+        border: 1px solid #cdcdcd;
+        border-collapse: collapse;
+        width: 700px;
+        margin-bottom: 50px;
+    }
+    .one td{
+        border: 1px solid #cdcdcd;
+        padding: 15px;
+    }
+    .one td:first-child{
+        border: transparent;
+        width: 50%;
+    }
+    .one th{
+        border: 1px solid #cdcdcd;
+        font-weight: lighter;
+        text-align: left;
+        padding: 10px;
+    }
+    .one p{
+        column-count: 2;
+    }
+    .cell{
+        border: 1px solid #cdcdcd;
+        border-radius: 5px;
+        width: 272px;
+        height: 16px;
+        line-height: 16px;
+        vertical-align: baseline;
+        background-color: #f9f9fb;
+        padding: 20px;
+    }
+    .border{
+        border: 1px solid #0085f2;
+        outline: 2px solid #99d3f8;
+        border-radius: 5px;
+    }
+    .last{
+        padding: 20px 20px 40px 20px;
+    }
+    .frame{
+       background-color: #f2f1f1;
+       padding: 15px 0px 15px 15px;
+       margin-bottom: 50px;
+    }
+    .comments{
+        color:#858585;
+        line-height: 24px;
+        margin-top: 0px;
+    }
+
+    .comments span{
+        color: #d30038;
+    }
+    .val{
+        font-weight: normal;
+    }
+    h5{
+        background-color: #f2f1f1;
+        width: fit-content;
+        font-weight: normal;
+    }
+    .two{
+        border-top: 1px solid #cdcdcd;
+        border-bottom: 1px solid #cdcdcd;
+        border-collapse: collapse;
+        width: 700px;
+        margin-bottom: 30px;
+    }
+    .two tr{
+        height: 40px;
+        border-top: 1px solid #cdcdcd;
+        border-bottom: 1px solid #cdcdcd;
+    }
+    .two th{
+        text-align: left;
+        padding: 15px;
+    }
+    .two tr:nth-child(odd){
+        background-color: #f9f9fb;
+    }
+    .example{
+        background-color: #f2f1f1;
+        margin-bottom: 40px;
+    }
+    .example p{
+       margin: 0px;
+    }
+    .f_string{
+        color: #d30038;
+        padding: 20px 0px 10px 10px;
+    }
+    .t_string{
+        color: #0069cb;
+        padding: 0px 0px 10px 30px;
+    }
+    .thr_string{
+        padding: 0px 0px 30px 30px;
+    }
+    .example a{
+        color: #d30038;
+        text-decoration-color:#0069c2;
+    }
+</style>
+</head>
+<body>
+    <div class="page">
+        <h1>column-count</h1>
+            <p>The <span class="term"> column-count </span> <a href="#">CSS</a> property 
+            breaks an element's content into the specified number of columns.</p>
+        <h2>Try it</h2>
+        
+        <table class="one">
+            <tr>
+                <th colspan="2">CSS Demo: column-count</th>
+            </tr>
+            <tr>
+                <td><div class="cell border">column-count: 2;</div></td>
+                <td rowspan="4">
+                    <p> London. Michaelmas term lately over, and the Lord Chancellor sitting in Lincoln's Inn Hall. 
+                        Implacable November weather. As much mud in the streets as if the waters had but newly retired 
+                        from the face of the earth, and it would not be wonderful to meet a Megalosaurus, forty feet 
+                        long or so, waddling like an elephantine lizard up Holborn Hill.</p>
+                </td>
+            </tr>
+            <tr>
+               <td> <div class="cell">column-count: 3;</div></td>
+            </tr>
+            <tr>
+                <td><div class="cell">column-count: 4;</div></td>
+            </tr>
+            <tr>
+                <td><div class="cell last">column-count: auto;<br>
+                                    column-width: 8rem;</div></td>
+                
+            </tr>
+        </table>
+
+        <h2>Syntax</h2>
+        
+        <div class="frame">
+            <p class="comments">
+            /* Keyword value */<br>
+            <span>column-count</span>: auto;</p>
+
+            <p class="comments">
+            /* &#60;integer&#62; value */<br>
+            <span>column-count</span>: 3;</p>
+
+            <p class="comments">/* Global values */<br>
+            <span>column-count</span>: inherit;<br>
+            <span>column-count</span>: initial;<br>
+            <span>column-count</span>: revert;<br>
+            <span>column-count</span>: revert-layer;<br>
+            <span>column-count</span>: unset;<br> </p>
+
+        </div>
+
+        <h2 class="val">Values</h2>
+        
+        <h5>auto</h5>
+        <p>The number of columns is determined by other CSS properties, 
+            such as <a href="#" class="term">column-width</a>.</p>
+        
+        <h5><a href="#">&#60;integer&#62;</a></h5>
+        <p>Is a strictly positive <span class="term"><a href="#"> &#60;integer&#62; </a></span> describing the ideal 
+            number of columns into which the content of the element will be flowed. If the  
+            <span class="term"> column-width </span> is also set to a non-<span class="term"> auto </span> value, 
+            it merely indicates the maximum allowed number of columns.</p>
+        <h2>Formal definition</h2>
+        <table class="two">
+            <tr>
+                <th><a href="#">Initial value</a></th>
+                <td><span class="term"> auto </span></td>
+            </tr>
+            <tr>
+                <th>Applies to</th>
+                <td>Block containers except table wrapper boxes</td>
+            </tr>
+            <tr>
+                <th><a href="#">Inherited</a></th>
+                <td>no</td>
+            </tr>
+            <tr>
+                <th><a href="#">Computed value</a></th>
+                <td>as specified</td>
+            </tr>
+            <tr>
+                <th>Animation type</th>
+                <td>an <a href="#">integer</a></td>
+            </tr>
+        </table>
+
+        <h2>Formal syntax</h2>
+        <div class="example">
+            <p class="f_string">column-count = </p>
+            <p class="t_string">auto</p>
+            <p class="thr_string"><a href="#"> &#60;integer&#62; [1,∞]&#62;</a></p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Задача 4d</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+ <style>
+    body {
+        font-family: 'Roboto', sans-serif;
+    }
+    .title {
+        width: 200px;
+        height: 50px;
+        text-align: left;
+        padding-left: 10px;
+        background-color: rgb(168, 166, 166);
+    }
+    .name {
+        width: 200px;
+        height: 50px;
+        font-weight: bold;
+        padding-left: 10px;
+        background-color: rgb(207, 205, 205);
+    }
+    .age {
+        width: 200px;
+        height: 50px;
+        text-align: right;
+        padding-right: 10px;
+    }
+ </style>
+<body>
+
+<h1>HTML table basics</h1>
+
+<button> <a href="#">Overview: Tables</a></button>
+
+<p>This article gets you started with HTML tables, covering the very basics such as rows, 
+cells, headings, making cells span multiple columns and rows, and how to group together all the
+ cells in a column for styling purposes.</p>
+
+ <table border="1" style="border-color:gray; border-collapse: collapse;">
+    <tr>
+        <th style="width: 20rem; height: 2.5rem; text-align: left; padding-left: 0.5rem;">Prerequisites:</th>
+        <td style="width: 60rem; height: 2.5rem; padding-left: 0.5rem;">The basics of HTML (see <a href="#">Introduction to HTML</a>).</td>
+    </tr>
+        
+    <tr>
+        <th style="width: 20rem; height: 2.5rem;text-align: left; padding-left: 0.5rem;">Objective:</th>
+        <td style="width: 60rem; height: 2.5rem; padding-left: 0.5rem;">To gain basic familiarity with HTML tables.</td>
+    </tr>    
+ </table>
+
+<h2>What is a table?</h2>
+
+<p>A table is a structured set of data made up of rows and columns (<strong>tabular data</strong>).
+ A table allows you to quickly and easily look up values that indicate some kind of connect
+ ion between different types of data, for example a person and their age, or a day of the week, or the
+  timetable for a local swimming pool.</p>
+
+<table border="1" style="border-collapse: collapse;
+                         margin-left: auto; 
+                         margin-right: auto;
+                         font-size: 20px; 
+                         border-color: black;">
+                         
+    <tr>
+        <th class="title">Person</th>
+        <th class="title">Age</th>
+    </tr>
+    <tr>
+        <td class="name">Chris</td>
+        <td class="age">38</td>
+    </tr>
+    <tr>
+        <td class="name">Dennis</td>
+        <td class="age">45</td>
+    </tr>
+    <tr>
+        <td class="name">Sarah</td>
+        <td class="age">29</td>
+    </tr>
+    <tr>
+        <td class="name">Karen</td>
+        <td class="age">47</td>
+    </tr>
+</table>
+
+</body>
+</html>
