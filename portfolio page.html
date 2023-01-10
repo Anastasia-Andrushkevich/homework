@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+	<title>portfolio page</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: 'Nanum Gothic', sans-serif;
+		}
+		.row{
+			width: 940px;
+			margin: 20px auto;
+			text-align: center;
+			box-sizing: border-box;
+		}
+		.row:nth-child(even){
+			background-color: #f6f6f6;
+			
+		}
+		.menu{
+			width: 940px;
+			margin: auto;
+			padding: 30px 10px 30px 10px;
+			text-align: center;
+			color: #d1d1d1;
+			border-bottom: 1px solid #d1d1d1;
+		}
+		nav  ul{
+			list-style: none;
+			display: flex;
+			justify-content: space-between;
+			font-weight: bold;
+		}
+						
+		.content-title .info{
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 20px;
+		}
+		.lang{
+			transform: rotate(-90deg);
+			padding: 50px 0 0 0;
+		}
+		.block{
+			margin-top: 50px;
+			padding-bottom: 50px;
+		
+		}
+
+		.block .content h2{
+			padding: 35px;
+		}
+		.block .description p{
+			margin: 20px;
+		}
+		
+	</style>
+</head>
+<body>
+	<header>
+		<nav class="menu">
+			<ul>
+				<li>Home</li>
+				<li>About me</li>
+				<li>Skills</li>
+				<li>Portfolio</li>
+				<li>Contacts</li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<div class="row">
+			<div class="content-title">
+				<div class="info">
+					<h2>Denis<br>Novik</h2>
+					<p>UX | UI designer <br>
+							24 years old, Minsk</p>
+					<div class="lang">RU |<b>ENG</b></div>
+				</div>
+				<div>
+					<img src="BSPP2266.jpg">
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="block">
+				<div class="content">
+					<h2>About me</h2>
+				</div>
+				<div class="description">
+					<p>Hi, I'm Denis – UX/UI designer from Minsk. <br>
+					I'm interested in design and everything connected with it.</p> 
+					
+					<p>I'm studying at courses "Web and mobile design <br>
+					interfaces" in IT-Academy.</p> 
+					
+					<p>Ready to implement excellent projects <br>
+					with wonderful people</p>
+				</div>
+			</div>
+		</div>	
+
+		<div class="row">
+			<div class="block">
+				<div class="content">
+					<h2>Skills</h2>
+				</div>
+				<div class="description">
+					<p>I work in such programs as</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="row"></div>
+
+		<div class="row"></div>
+
+		<div class="row"></div>
+
+		<div class="row"></div>
+	</main>
+</body>
+</html>
