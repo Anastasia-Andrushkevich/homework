@@ -6,19 +6,25 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
 	<title>portfolio page</title>
 	<style>
 		*{
 			margin: 0;
 			padding: 0;
 			box-sizing: border-box;
-			font-family: 'Cabin', sans-serif;
-		
+			font-family:  'Rubik', sans-serif; 
+	
 		}
 		header
 		main{
 			width: 1445px;
+		}
+		header{
+			position: sticky;
+			top: 0;
+			z-index: 60;
+			background-color: white;
 		}
 		.row{
 			
@@ -31,14 +37,12 @@
 			
 		}
 		header .menu{
-			width: 940px;
+			width: 980px;
 			margin: auto;
 			padding: 30px 10px 30px 10px;
 			text-align: center;
-			border-bottom: 2px solid #667799;
-			position: sticky;
-			top: 0;
-			height: 100%;
+			border-bottom: 1px solid #c0c0c0;
+			
 		}
 		nav  ul{
 			list-style: none;
@@ -49,6 +53,9 @@
 		nav li a{
 			text-decoration: none;
 			color: #d1d1d1;
+		}
+		nav li a:hover{
+			text-decoration: underline;
 			
 		}
 		nav li a span{
@@ -56,7 +63,9 @@
 			font-weight: bold;
 		}	
 		.content-title .info{
-			margin: 20px 90px 20px 90px;
+			width: 980px;
+			margin-left: auto;
+			margin-right: auto;
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
@@ -66,11 +75,16 @@
 			transform: rotate(-90deg);
 			padding: 50px 0 0 0;
 		}
-		.block{
-			margin-top: 50px;
-			padding-bottom: 50px;
-		
+		.content-title img{
+			margin-bottom: 50px;
 		}
+		.lang span{
+			color: #828282;
+		}
+		.block{
+			margin: 0;
+			padding: 100px 0px 107px 0px;
+    	}
 
 		.block .content h2{
 			padding: 35px;
@@ -80,17 +94,56 @@
 		}
 
 		.icon{
-			display: flex;
+			display: inline-flex;
 			justify-content: space-between;
-			padding: 35px 150px 35px 150px;
+			margin-left: auto;
+			margin-right: auto;
 		}
-		.icon img{
-			width: 133px;
-			height: 143px;
-			padding-left: 20px;
+		
+		.icon-items{
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+			margin: 30px 65px 0px 65px;
+    		padding: 20px;
+		}
+		.icon-items img[src$='jpg']{
+			width: 89px;
+			height: 88px;
+		}
+		.icon-items ul{
+			list-style: none;
+			display: inline-flex;
+		}
+		.icon-items p{
+			padding: 18px;
 		}
 		.description p a{
 			margin: 20px;
+		}
+		.send button{
+			width: 181px;
+			height: 42px;
+			background-color: #070707;
+			border-radius: 30px;
+			margin: 20px;
+		}
+		.send button a{
+			text-decoration: none;
+			color: white;
+			font-weight: bold;
+			font-size: 16px;
+		}
+		.network{
+			display: flex;
+			justify-content: space-between;
+			margin: 45px auto;
+			width: 342px;
+			height: 41px;
+		}
+		h5{
+			color: #c8c8c8;
 		}
 	</style>
 </head>
@@ -113,7 +166,7 @@
 					<h2>Denis<br>Novik</h2>
 					<p>UX | UI designer <br>
 							24 years old, Minsk</p>
-					<div class="lang">RU |<b>ENG</b></div>
+					<div class="lang"><span>RU</span> |<b>ENG</b></div>
 				</div>
 				<div>
 					<img src="BSPP2266.jpg">
@@ -121,9 +174,9 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="block">
+			<div class="block" id="link-about">
 				<div class="content">
-					<h2 id="link-about">About me</h2>
+					<h2 >About me</h2>
 				</div>
 				<div class="description">
 					<p>Hi, I'm Denis – UX/UI designer from Minsk. <br>
@@ -139,41 +192,104 @@
 		</div>	
 
 		<div class="row">
-			<div class="block">
+			<div class="block" id="link-skills">
 				<div class="content">
-					<h2 id="link-skills">Skills</h2>
+					<h2 >Skills</h2>
 				</div>
 				<div class="description">
 					<p>I work in such programs as</p>
 				</div>
 				<div class="icon">
-					<img src="Group 6.png">
-					<img src="Group 6-1.png">
-					<img src="Group 6-2.png">
-					<img src="Group 7.png">
+					<div class="icon-items">
+						<img src="Group_ps.png">
+						<p>Adobe<br>Photoshop</p>
+						<ul>
+							<li><img src="Starfull.svg"></li>
+							<li><img src="Starfull.svg"></li>
+							<li><img src="Starfull.svg"></li>
+							<li><img src="Starfull.svg"></li>
+							<li><img src="Star.svg"></li>
+						</ul>
+					</div>
+					<div class="icon-items">
+						<img src="Group 2_ai.png">
+						<p>Adobe<br>Illustrator</p>
+						<ul>
+							<li><img src="Starfull.svg"></li>
+							<li><img src="Starfull.svg"></li>
+							<li><img src="Starfull.svg"></li>
+							<li><img src="Star.svg"></li>
+							<li><img src="Star.svg"></li>
+						</ul>
+					</div>
+					<div class="icon-items">
+						<img src="Group_ae.png">
+						<p>Adobe<br>After Effects</p>
+						<ul>
+							<li><img src="Starfull.svg"></li>
+							<li><img src="Starfull.svg"></li>
+							<li><img src="Starfull.svg"></li>
+							<li><img src="Starfull.svg"></li>
+							<li><img src="Star.svg"></li>
+						</ul>
+					</div>
+					<div class="icon-items">
+						<img src="Group_figma.png">
+						<p>Figma</p>
+						<ul>
+							<li><img src="Starfull.svg"></li>
+							<li><img src="Starfull.svg"></li>
+							<li><img src="Starfull.svg"></li>
+							<li><img src="Starfull.svg"></li>
+							<li><img src="Star.svg"></li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
 
 		<div class="row">
-			<div class="block">
+			<div class="block" id="link-portfolio">
 				<div class="content">
 					<h2 id="link-portfolio">Portfolio</h2>
 				</div>
 				<div class="description">
 					<img src="Слой 8.jpg">
-					<p><a href="https://ru.wix.com/website/templates/html/online-store/fashion-clothing" 
-					target="_blank">Online fashion store - Homepage</a></p>
+						<p><a href="https://ru.wix.com/website/templates/html/online-store/fashion-clothing" 
+							target="_blank">Online fashion store - Homepage</a></p>
 					<img src="reebok_web.jpg">
+						<p><a href="https://www.reebok.com/us" 
+							target="_blank">Reebok Store - Concept</a></p>
+					<img src="reebok_web2.png">
+						<p><a href="https://braun-shop.by/" 
+							target="_blank">Braun Landing Page - Concept</a></p>
 				</div>
 			</div>	
 		</div>
 
-		<div class="row"></div>
+		<div class="row">
+			<div class="block" id="link-contacts">
+				<div class="content">
+					<h2 >Contacts</h2>
+				</div>
+				<div class="description">
+					<p>Want to know more or just chat?<br>
+						 You are welcome!</p>
+				</div>
+				<div class="send">
+				<button><a href="#">Send message</a></button>
+				</div>
+				<div class="network">
+					<img src="Group 2_linkedln.png">
+					<img src="Vector_inst.png">
+					<img src="Group 9_bechance.png">
+					<img src="Vector_dribble.png">
+				</div>
+				<h5>Like me on <br>
+					LinkedIn, Instagram, Behance, Dribble</h5>
+		</div>
 
-		<div class="row"></div>
-
-		<div class="row"></div>
+		
 	</main>
 </body>
 </html>
