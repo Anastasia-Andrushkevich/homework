@@ -68,7 +68,7 @@
 		}
 		nav li a:hover{
 			text-decoration: underline;
-			
+			transition: 200ms;
 		}
 		.return {
 			color: black;
@@ -125,6 +125,7 @@
 		}
 		.mob_lang a:hover{
 			text-decoration: underline;
+			transition: 200ms;
 		}
 		.mob_lang .mob_lang_active{
 			color: #828282;
@@ -132,9 +133,13 @@
 		.controls button{
 			width: 22px;
 			height: 22px;
-			border: 1px solid red;
+			border: 0;
 			background-color: white;
-			padding:  17px 41px 57px 0px;
+			margin:  17px 41px 0px 0px;
+		}
+		.controls button:hover{
+			box-shadow: rgba(100, 100, 111, 0.6) 0px 7px 29px 0px;
+			transition: 200ms;
 		}
 		.content-title .info{
 			max-width: 980px;
@@ -156,6 +161,7 @@
 		}
 		.lang a:hover{
 			text-decoration: underline;
+			transition: 200ms;
 		}
 		.lang .lang_active{
 			color: #828282;
@@ -217,6 +223,10 @@
 		.icon-items p{
 			padding: 18px;
 		}
+		.description_photo:hover{
+			box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+			transition: 200ms;
+		}
 		.description p a{
 			margin: 20px;
 			color: #070707;
@@ -245,8 +255,20 @@
 			gap:40px;
 			margin: 45px auto;
 		}
+		.network a:hover{
+			box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+			transition: 200ms;
+		}
 		h5{
 			color: #c8c8c8;
+		}
+		h5 a{
+			text-decoration: none;
+			color: #c8c8c8;
+		}
+		h5 a:hover{
+			text-decoration: underline;
+			transition: 200ms;
 		}
 		@media (max-width:1800px)  {
 			.mob_menu{
@@ -286,10 +308,7 @@
 				display: none;
 			}
 			
-			.block .description img{
-				width: 316px;
-				height: 176px;
-			}
+			
 			.content-title{
 				display: flex;
 				flex-direction: row-reverse;
@@ -303,7 +322,7 @@
 				position: absolute;			
 			}
 			.mob_menu_visible{
-				display: block;
+				display: flex;
 			}
 			
 			.content-title .info{
@@ -322,6 +341,11 @@
 			.lang{
 				display: none;
 			}
+			.block .description img{
+				width: 316px;
+				height: 176px;
+			}
+
 			.icon{
 				flex-direction: column;
 				flex-wrap: wrap;
@@ -470,13 +494,13 @@
 					<h2 id="link-portfolio">Portfolio</h2>
 				</div>
 				<div class="description">
-					<img src="design.jpg" alt="start_page">
+					<a class="description_photo" href="#"><img src="design.jpg" alt="start_page"></a>
 						<p><a href="https://ru.wix.com/website/templates/html/online-store/fashion-clothing" 
 							target="_blank">Online fashion store - Homepage</a></p>
-					<img src="reebok.jpg" alt="start_page">
+					<a class="description_photo" href="#"><img src="reebok.jpg" alt="start_page"></a>
 						<p><a href="https://www.reebok.com/us" 
 							target="_blank">Reebok Store - Concept</a></p>
-					<img src="braun.png" alt="start_page">
+					<a class="description_photo" href="#"><img src="braun.png" alt="start_page"></a>
 						<p><a href="https://braun-shop.by/" 
 							target="_blank">Braun Landing Page - Concept</a></p>
 				</div>
@@ -496,13 +520,14 @@
 				<a href="#"><button>Send message</button></a>
 				</div>
 				<div class="network">
-					<img src="linkedln.png" alt="icon_linkedln">
-					<img src="inst.png" alt="icon_inst">
-					<img src="bechance.png" alt="icon_bechance">
-					<img src="dribble.png" alt="icon_dribble">
+					<a href="#"><img src="linkedln.png" alt="icon_linkedln"></a>
+					<a href="#"><img src="inst.png" alt="icon_inst"></a>
+					<a href="#"><img src="bechance.png" alt="icon_bechance"></a>
+					<a href="#"><img src="dribble.png" alt="icon_dribble"></a>
 				</div>
 				<h5>Like me on <br>
-					LinkedIn, Instagram, Behance, Dribble</h5>
+					<a href="#">LinkedIn</a>, <a href="#">Instagram</a>, <a href="#">Behance</a>, 
+					<a href="#">Dribble</a></h5>
 		</div>
 
 		
