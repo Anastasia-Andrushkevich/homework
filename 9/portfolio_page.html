@@ -10,12 +10,12 @@
 	<title>portfolio page</title>
 	<script>
 		window.addEventListener("DOMContentLoaded", function () {
-    document.querySelector("#open_menu").addEventListener("click", function () {
-        document.querySelector(".mob_menu").classList.add("visible");
+    document.querySelector(".open_menu").addEventListener("click", function () {
+        document.querySelector(".mob_menu").classList.add("mob_menu_visible");
     });
     document.body.addEventListener("click", function (e) {
-        if (!e.target.closest("#open_menu")) {
-            document.querySelector(".mob_menu").classList.remove("visible");
+        if (!e.target.closest(".open_menu")) {
+            document.querySelector(".mob_menu").classList.remove("mob_menu_visible");
         }
     });
 });
@@ -74,15 +74,21 @@
 			color: black;
 			font-weight: bold;
 		}	
-		.open_menu button{
+		.open_menu{
 			display: flex;
 			flex-direction: row-reverse;
     		align-items: flex-start;
+			width: 33px;
+			height: 20px;
+			margin: 20px;
+		}
+		.open_menu button{
 			border: 0;
 			background-color: white;
 		}
 		.open_menu button:hover{
-			box-shadow: #070707;
+			box-shadow: rgba(100, 100, 111, 0.6) 0px 7px 29px 0px;
+			transition: 200ms;
 		}
 		.mob_menu{
 			background-color: white;
@@ -126,7 +132,7 @@
 		.controls button{
 			width: 22px;
 			height: 22px;
-			border: 0;
+			border: 1px solid red;
 			background-color: white;
 			padding:  17px 41px 57px 0px;
 		}
@@ -291,60 +297,15 @@
 			}
 			.open_menu{
 				display: block;
-				margin: 20px;
 			}
-			.open_menu button:hover{
-				box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-				}
 			.mob_menu{
-				background-color: white;
-				width: 375px;
-				height: 812px;
-				display: flex;
-				justify-content: space-between;
-				visibility: visible;
-				position: absolute;
-			
+				display: none;
+				position: absolute;			
 			}
-			.mob_menu .list ul {
-				list-style: none;
-				display: flex;
-				flex-direction: column;
-				align-items: flex-start;
-				justify-content: space-around;
-				flex-wrap: wrap;
-				gap: 18px;
-				margin: 17px;
+			.mob_menu_visible{
+				display: block;
 			}
 			
-			.mob_menu .controls{
-				display: flex;
-				flex-direction: column;
-				justify-content: space-between;
-				align-items: flex-end;
-			}
-			.controls button{
-			width: 22px;
-			height: 22px;
-			background-color: white;
-			padding:  17px 41px 57px 0px;
-			}
-
-			
-			.controls .mob_lang{
-				transform: rotate(90deg);
-				padding: 0px 57px 57px 0px;
-			}
-			.mob_lang a{
-				text-decoration: none;
-				color: #070707;
-			}
-			.mob_lang a:hover{
-				text-decoration: underline;
-			}
-			.mob_lang .mob_lang_active{
-				color: #828282;
-			}
 			.content-title .info{
 					display: flex;
 					flex-direction: column;
@@ -357,13 +318,7 @@
 			.row .author_mob{
 				display: block;
 			}
-			.content-title .author_mob img{
-				margin-bottom: 50px;
-				width: 316.5px;
-				height: 478px;
-				margin-left: auto;
-				margin-right: auto;
-			}
+			
 			.lang{
 				display: none;
 			}
@@ -394,7 +349,7 @@
 	</header>
 
 	
-	<div class="mob_menu">
+	<div class="mob_menu mob_menu_visible">
 		<div class="list">
 			<nav>
 				<ul>
