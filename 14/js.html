@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Задание 14-анкета</title>
+    
+</head>
+<body>
+    <script>
+        let lastname = prompt ("Введите фамилию"); 
+        let firstname = prompt ("Введите имя"); 
+        let fathername = prompt ("Введите отчество"); 
+        let age = Number(prompt ("Введите возраст")) ;
+        let gender = confirm ("Ваш пол мужской");
+
+        let message = "Ваше ФИО: " + lastname  + " " + firstname  + " " + fathername + "\n";
+        message = message + "Ваш возраст в годах: " + age + "\n";
+        message = message + "Ваш возраст в днях: " + age*365 + "\n";
+        message = message + "Через 5 лет вам будет: " + (age + 5) + "\n";
+
+        message = message + "Ваш пол: ";
+            if (gender === true){
+                message += "мужской";
+            } else{
+                message += "женский";
+            }
+        
+        message += "\n";
+
+        message = message + "Вы на пенсии: ";        
+        if(age < 60) {
+            message += "нет";
+            } else{
+                message += "да";
+            }
+       
+        alert(message);
+    </script>
+</body>
+</html>
